@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="navBar">
+            <div class="logo"><a href="#"><span>Your</span> Restaurant</a></div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            </div>
+    </header>
+
+    <div id="filters">
+        <input type="text" id="search" placeholder="Search">
+            <select id="category">
+                <option value="">All Categories</option>
+                <option value="Fast Food">Fast Food</option>
+                <option value="Eastren">Eastren</option>
+                <option value="Sea Food">Sea Food</option>
+            </select>
+        <input type="number" id="price" placeholder="Max Price">
+    </div>
+
+    <div id="menu"></div>
+
+        <div class="new-dish-btn"><button id="new-dish-btn">New Dish</button></div>
+        <div id="new-dish-form" style="display: none;">
+            <input type="text" id="new-dish-name" placeholder="Name">
+            <input type="text" id="new-dish-category" placeholder="Category">
+            <input type="text" id="new-dish-image" placeholder="Image URL">
+            <input type="number" id="new-dish-price" placeholder="Price">
+            <textarea id="new-dish-ingredients" placeholder="Ingredients"></textarea>
+            <button id="add-dish-btn">Add Dish</button>
+        </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
